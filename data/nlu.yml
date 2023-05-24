@@ -1,0 +1,141 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no thanks, bye
+    - No
+
+- intent: list_requirements
+  examples: |
+    - list all requirements
+    - Show me the list of all the requirements
+    - Show me all the requirements
+    - Requirement list please
+    - Can you show me the list of all the requirements you have?
+    - I need to see the list of all the software requirements for this project.
+    - Can you display the full list of software requirements you've gathered so far?
+    - What are the software requirements for this project? Can you show me a complete list?
+    - I want to make sure I understand all the software requirements. Can you provide me with a list?
+    - Can you give me a rundown of all the software requirements you've collected?
+    - Is there a way to see a comprehensive list of all the software requirements for this project?
+    - I'm not sure if I have all the software requirements. Can you show me a list of them?
+    - It would be helpful if I could see a list of all the software requirements you've identified.
+    - Can you please share with me the list of software requirements you've compiled for this project?
+    - I'm trying to get an overview of all the software requirements. Can you show me a list of them?
+
+- intent: add_requirement
+  examples: |
+    - I want to add a requirement
+    - Can I include an additional requirement?
+    - It is my intention to introduce a new requirement.
+    - I would like to append a new requirement.
+    - May I suggest an extra requirement?
+    - My request is to incorporate another requirement.
+    - I'd like to include a new requirement.
+    - Can we insert a new requirement into the list?
+    - Let's append a new requirement to the list.
+    - May I enter a new requirement into the system?
+    - I am looking to add a new requirement.
+    - We should attach a new requirement to the list.
+    - It would be good to incorporate a new requirement.
+    - Could you add a new requirement to the list?
+    - Shall we integrate a new requirement into the system?
+    - I propose to include a new requirement into the list.
+    - I would like to include a new requirement in the database.
+    - Adding a requirement to the database is necessary.
+    - Can we insert a new requirement into the database?
+    - Let's update the database with a new requirement.
+    - Our database needs a new requirement, can you help me add it?
+
+- intent: collect_requirement
+  examples: |
+    - The system should be accessible from any location
+    - The system should only be accessible from authorized locations.
+    - The system should allow users to upload files of any size
+    - The system should limit the file size for uploads
+    - The system should be able to store data indefinitely 
+    - The system should automatically delete data after a set time period
+    - The system should allow users to modify data in real-time
+    - The system should lock data once it has been entered
+    - The system should provide a user-friendly interface with advanced features 
+    - The system should be simple and easy to use.
+    - The system should be able to process large amounts of data quickly 
+    - The system should be able to provide real-time data processing
+    - The system allows the user to retrieve items in any format
+    - The system should not support file conversion 
+    - When requested, the _VehicleCore_ shall transition the UAV between states according to allowed state transitions as depicted in the UAV state transition diagram.
+    - If a client registers for notifications, the _UIMiddleware_ shall send notifications for specific events.
+    - The _VehicleCore_ shall assign a unique ID to each activated UAV.
+    - The _SingleUAVFlightPlanScheduler_ shall only execute one flight plan at a time for each UAV.
+    - The _UAVActivationManager_ shall ensure that only one instance of each registered drone is active at any time.
+    - The _VehicleCore_ shall associate a UAV_TYPE for each UAV defining UAV's basic attributes.
+    - Each waypoint shall be specified using coordinates that include longitude latitude and altitude.
+    - When a flight plan is executed, the _VehicleCore_ shall send the next waypoint to the UAV.
+    - The _SingleUAVFlightPlanScheduler_ shall maintain a managed list of pending flight plans for Each UAV.
+    - If requested, the _SingleUAVFlightPlanScheduler_ shall unassign the flight plan assigned to a UAV that is awaiting execution.
+    - If a UAV has pending flight plans, then when the UAV reaches the final waypoint of UAV's current flight plan, the _SingleUAVFlightPlanScheduler_ shall execute the next assigned flight plan.
+    - When a UAV's current flight is cancelled, the _SingleUAVFlightPlanScheduler_ shall in turn cancel all scheduled flight plans for that UAV.
+    - The _UIMiddleware_ shall provide an interface for registering UI clients.
+    - The _UIMiddleware_ shall assign one control-client at a time for each UAV.
+    - If a command is issued by the _VaadinUI_ for an UAV, the _VaadinUI_ shall request control of that UAV.
+    - When the _RealTimeFlightUI_ is loaded, a map shall be displayed.
+    - The _RealTimeFlightUI_ shall display the location of active UAVs as icons on the map.
+    - When a stationary or moving object is within the proximity of a UAV, the _ObjectAvoidance_ system shall issue evasive directives to the UAV.
+    - If a UAV takes evasive actions, the system shall ensure that the UAV will eventually reach UAV's destination.
+    - The _ObjectAvoidance_ system shall only issue commands within the capabilities of the UAV.
+    - When a UAV has an active onboard Obstacle Avoidance, then the _ObstacleAvoidance_ system shall not issue directives.
+    - When a _GCS_ requests activation of a newly detected UAV, the _GCSMiddleware_ shall forward the request to Dronology.
+    - The _UAVActivationManager_ shall only activate UAVs that are registered.
+    - When the _GCS_ loses the connection to an UAV, the _GCS_ shall attempt to reconnect.
+    - When the "return to home" command is issued, the _FlightManager_ shall return the UAV to UAV's original launch location without issuing any additional waypoint or routing commands.
+    - The _FlightRouteManager_ shall define flight routes as an ordered sequence of waypoints in which the first waypoint represents the first target location and the final waypoint represents the final target location.
+    - The _FlightRouteManager_ shall ensure that all flight routes represent a VALID_FLIGHT_ROUTE.
+    - The _FlightRouteManager_ shall persist flight routes.
+    - When a flight route requires a customized takeoff altitude that differs from the system's default takeoff altitude, the altitude shall be specified in the flight route.
+    - When requested, the _CoordinateSystem_ shall transform coordinates to alternate formats.

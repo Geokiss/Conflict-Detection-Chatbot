@@ -1,0 +1,37 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - list_requirements
+  - add_requirement
+  - collect_requirement
+
+responses:
+  utter_greet:
+  - text: "Hey! I am a Software Requirement collector Chatbot. \nHow can I help you ? 😊"
+
+  utter_list_requirements:
+  - text: "Here are the requirements registered in the database. Anything else I can help you with?"
+
+  utter_add_requirement:
+  - text: "What is the requirement you wish to include?"
+
+  utter_keep_adding_requirement:
+  - text: "The requirement has been registered. Do you want to keep adding requirements?"
+
+  utter_goodbye:
+  - text: "Bye 😊"
+  - text: "Have a great day! 😊"
+  - text: "No worries 😊"
+
+actions:
+  - action_list_requirements
+  - action_add_requirement
+  - action_restart
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

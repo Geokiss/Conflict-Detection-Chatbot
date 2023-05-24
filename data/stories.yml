@@ -1,0 +1,18 @@
+version: "3.1"
+
+stories:
+
+- story: List all the Requirments
+  steps:
+  - intent: list_requirements
+  - action: utter_list_requirements
+  - action: action_list_requirements
+  - action: action_restart
+
+- story: Adding a new requirement
+  steps:
+  - intent: add_requirement
+  - action: utter_add_requirement
+  - intent: collect_requirement
+  - action: action_add_requirement
+  - action: action_restart
