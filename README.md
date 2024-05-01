@@ -55,6 +55,8 @@ date_created TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
 doc_txt TEXT
 );
 
+To work with the datasets that applied in the experiments, please refer to the file datasets
+
 1.	Insert a row in the Database:
 INSERT INTO documents (doc_txt)
 VALUES 
