@@ -1,7 +1,7 @@
 # Conflict-Detection-Chatbot
- 
-The chatbot, developed using the Rasa platform, enables real-time
-detection of conflicts, focusing on three general types: duplicated (similar), incompatible, and contradictory requirements.
+
+1-Description: 
+The chatbot, developed using the Rasa platform, enables real-time detection of conflicts, focusing on three general types: duplicated (similar), incompatible, and contradictory requirements.
 To set up the chatbot :
 * Download and configure the Docker compose. It represents a valuable tool for defining and executing multi-container applications. The tool is used to handle two containers:
 a PostgreSQL database container and an Adminer container. To set up the PostgreSQL container, configure it with environment variables for username, password, and database name. The Adminer container, on the other hand, provided a web-based management tool. Together, these containers allowed the Rasa chatbot to interact with
@@ -12,12 +12,15 @@ engine = create_engine("postgresql+psycopg2://postgres:mysecretpassword@localhos
 
 * Configure the API for open ai in the file config.py
 
-* you can change or update the prompt in the messages variable in file app.py as described
+2-Exxample of the ChatGPT prompt: 
+You can change or update the prompt in the messages variable in file app.py as described
 
 ![image](https://github.com/Geokiss/Conflict-Detection-Chatbot/assets/134546067/5d5126f5-7e52-454f-9a09-e1ac0837231f)
 
 
 
+
+3- Rasa Commands:
 After installing rasa in your local computer here are some important terminal commands:
 
 
