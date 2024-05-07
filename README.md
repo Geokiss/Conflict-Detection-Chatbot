@@ -1,6 +1,6 @@
 # Conflict-Detection-Chatbot
 
-1-Introduction: 
+1-Chatbot Setup: 
 
 The chatbot, developed using the Rasa platform (https://rasa.com/docs/rasa/), enables real-time detection of conflicts.
 To set up the chatbot :
