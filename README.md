@@ -67,7 +67,7 @@ doc_txt TEXT
 
 
 
-1.	Insert a row in the Database:
+* Insert a row in the Database:
 INSERT INTO documents (doc_txt)
 VALUES 
 ('The system should allow users to save their work')
