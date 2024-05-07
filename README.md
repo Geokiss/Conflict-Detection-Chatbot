@@ -12,9 +12,15 @@ engine = create_engine("postgresql+psycopg2://postgres:mysecretpassword@localhos
 
 * Configure the API for open ai in the file config.py
 
-* you can change or update the prompt in the messages variable in file app.py
+* you can change or update the prompt in the messages variable in file app.py as described
 
-Some important terminal commands:
+![image](https://github.com/Geokiss/Conflict-Detection-Chatbot/assets/134546067/5d5126f5-7e52-454f-9a09-e1ac0837231f)
+
+
+
+After installing rasa in your local computer here are some important terminal commands:
+
+
 Activating the Environment:
 •	Navigate to the folder where env folder is present, then type:
 env\Scripts\activate
