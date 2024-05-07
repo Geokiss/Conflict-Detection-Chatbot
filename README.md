@@ -12,7 +12,7 @@ engine = create_engine("postgresql+psycopg2://postgres:mysecretpassword@localhos
 
 * Configure the API for open ai in the file config.py
 
-2-Exxample of the ChatGPT prompt: 
+2-Example of the ChatGPT prompt: 
 You can change or update the prompt in the messages variable in file app.py as described
 
 ![image](https://github.com/Geokiss/Conflict-Detection-Chatbot/assets/134546067/5d5126f5-7e52-454f-9a09-e1ac0837231f)
