@@ -1,7 +1,8 @@
 # Conflict-Detection-Chatbot
 
-1-Description: 
-The chatbot, developed using the Rasa platform, enables real-time detection of conflicts, focusing on three general types: duplicated (similar), incompatible, and contradictory requirements.
+1-Introduction: 
+
+The chatbot, developed using the Rasa platform (https://rasa.com/docs/rasa/), enables real-time detection of conflicts.
 To set up the chatbot :
 * Download and configure the Docker compose. It represents a valuable tool for defining and executing multi-container applications. The tool is used to handle two containers:
 a PostgreSQL database container and an Adminer container. To set up the PostgreSQL container, configure it with environment variables for username, password, and database name. The Adminer container, on the other hand, provided a web-based management tool. Together, these containers allowed the Rasa chatbot to interact with
