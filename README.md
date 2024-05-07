@@ -6,7 +6,8 @@
 1-Chatbot Setup: 
 
 The chatbot, developed using the Rasa platform (https://rasa.com/docs/rasa/), enables real-time detection of conflicts.
-The project folder includes the different types of training data that go into a Rasa assistant and how this training data is structured.
+The project folder includes the different types of training data (data folder) that go into a Rasa assistant and how this training data is structured.
+After each user message, the model will predict an action that the assistant should perform next (Action folder).
 To set up the chatbot :
 * Download and configure the Docker compose. It represents a valuable tool for defining and executing multi-container applications. The tool is used to handle two containers:
 a PostgreSQL database container and an Adminer container. To set up the PostgreSQL container, configure it with environment variables for username, password, and database name. The Adminer container, on the other hand, provided a web-based management tool. Together, these containers allowed the Rasa chatbot to interact with
